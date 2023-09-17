@@ -1,0 +1,10 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ... otros estilos ... */
+  }
+  
+  input, button {
+    /* ... estilos para input y botón ... */
+  }

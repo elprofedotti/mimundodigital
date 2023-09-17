@@ -1,0 +1,18 @@
+
+    <div class="card">
+    
+        <ul class="card-body">
+            <h5 class="card-title" id="habilidades">Habilidades</h5>
+            <li class="card-text" *ngFor="let habilidad of habilidades; let i =index" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()">
+                <span [ngStyle]="{'color': i === hoveredIndex ? 'white':'black',
+                'background-color': i === hoveredIndex ? 'black':'white'}">
+                    {{habilidad}}
+                </span>
+            </li>
+        </ul>
+    </div>
+
+<!-- <form (submit)="agregarHabilidad($event, nuevaHabilidad)">
+    <input type="text" #nuevaHabilidad placeholder="Nueva habilidad">
+    <button type="submit">Añadir</button>
+</form> -->

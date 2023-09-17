@@ -1,0 +1,23 @@
+
+<div [ngClass]="{'theme-light': tema === 'light', 'theme-dark': tema === 'dark'}">
+    <app-menu-superior></app-menu-superior>
+    <app-carrusel></app-carrusel>
+    <div class="cardbase w-100">
+        <app-perfil></app-perfil>
+    </div>
+    <div class="cardbase w-100">
+    <app-habilidades></app-habilidades>
+    </div>
+    <span id="contacto"></span>
+    <app-formulario-contacto></app-formulario-contacto>
+    <hr>
+    
+    <app-registro-novedades></app-registro-novedades>
+    <app-listado-recursos></app-listado-recursos>
+    <a href="https://wa.me/+5492942547849" target="_blank" class="whatsapp-button">
+        <img src="../assets/images/wapp.png" alt="WhatsApp">
+    </a>
+    
+</div>
+<hr>
+<button (click)="cambiarTema()">Cambiar Tema</button>

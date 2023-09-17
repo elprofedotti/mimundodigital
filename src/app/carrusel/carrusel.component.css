@@ -1,0 +1,22 @@
+/* Carousel base class */
+.carousel {
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    bottom: 1rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    background-color: black;
+    opacity: .75;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    
+    padding-top: 1rem;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    
+    height: 24rem;
+  }

@@ -1,0 +1,23 @@
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item " *ngFor="let slide of slides; let i = index" [class.active]="i === activeSlideIndex">
+        <img class="d-block w-100 h-auto" [src]="slide.img" alt="{{slide.title}}">
+        <div class="container">
+            <div class="carousel-caption {{slide.pos}}">
+              <h1>{{slide.title}}</h1>
+              <p class="opacity-100">{{slide.desc}}</p>
+              <p><a class="btn btn-lg btn-primary" href="{{slide.link}}">{{slide.btn}}</a></p>
+            </div>
+        </div>
+        </div>
+      </div>
+      
+
+
+    
+  </div>
+
+
+
+

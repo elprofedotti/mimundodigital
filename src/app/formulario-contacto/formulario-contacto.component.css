@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #02f1fd; /* Fondo */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo */
+    margin: auto;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

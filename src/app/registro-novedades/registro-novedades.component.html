@@ -1,0 +1,8 @@
+<div id="novedades" class="container">
+<label for="correo"><h3>Suscribete a nuestras actualizaciones</h3></label>
+<br>
+<form (ngSubmit)="registrar()" #registroForm="ngForm">
+    <input id="correo" type="email" placeholder="Correo electrónico para novedades" [(ngModel)]="correo" name="correo" required>
+    <button type="submit" [disabled]="!registroForm.form.valid">Suscribirse</button>
+</form>
+</div>

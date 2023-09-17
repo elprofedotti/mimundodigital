@@ -1,0 +1,8 @@
+<form (ngSubmit)="enviarFormulario()" #contactForm="ngForm">
+    <label for="nombre">Contacta con @elprofedotti</label>
+    <input id="nombre" type="text" placeholder="Nombre" [(ngModel)]="nombre" name="nombre" required>
+    <input type="email" placeholder="Correo electrónico" [(ngModel)]="email" name="email" required>
+    <input type="text" placeholder="Asunto" [(ngModel)]="asunto" name="asunto" required>
+    <textarea placeholder="Mensaje" [(ngModel)]="mensaje" name="mensaje" required></textarea>
+    <button type="submit" [disabled]="!contactForm.form.valid">Enviar</button>
+  </form>
